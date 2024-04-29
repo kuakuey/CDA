@@ -1,0 +1,150 @@
+:root {
+    --color-primary: #dd6622;
+  }
+
+*{
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+}
+#cont-principal{
+    width: calc(100% - 10rem);
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.cabecera{
+    height: 4rem;
+    align-content: center;
+    text-align: center;
+}
+.contenido{
+    position: relative;
+    height: calc(100vh - 8rem);
+    width: calc(100% - 4rem);
+    padding-inline: 2rem;
+
+    display: grid;
+    grid-template-columns: repeat(3, 30%);
+    gap: 3%;
+    justify-content: center;
+
+}
+
+.CardRef{
+  position: relative;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  transition: 0.2s ease-in;
+  background: white;
+  border-radius: 2rem;
+  overflow: hidden;
+  border: 2px solid whitesmoke;
+
+
+
+  &:hover{
+    #cardicon{
+      background: #e96331;
+    }
+    .icono-card{
+      background: white;
+    }
+    box-shadow:  5px 5px 9px #5a5a5a, -5px -5px 9px #ffffff;
+    transform: scale(1.05);
+  }
+}
+#cardicon{
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 60%;
+  text-align: end;
+  align-content: center;
+  z-index: 4;
+  transition: 0.2s ease-in;
+  animation-delay: 1s;
+
+}
+
+
+
+#cardtitle{
+  background: whitesmoke;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 50%;
+  transition: 0.2s ease-in;
+
+  border-radius: 0;
+  z-index: 5;
+
+  align-content: center;
+}
+#cardtitle p{
+  font-size: 2rem;
+  font-weight: bold;
+  user-select: none;
+
+}
+
+
+
+#cardurl{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 15;
+}
+.icono-card{
+  margin-top: 4rem;
+  width: 50%;
+  height: 100%;
+  transition: 0.2s ease-in;
+}
+
+
+
+
+@media screen and (max-width: 768px) {
+    .ContCard {
+      grid-template-columns: repeat(2, 47%);
+    }
+    #cardtitle p{
+      font-size: 1.5rem;   
+    }
+  }
+
+@media screen and (max-width: 425px) {
+    #navegador {
+        width: 100%;
+        height: 8vh;
+        flex-direction: row;
+
+    }
+    #cont-principal{
+      margin-top: 8vh;
+        width: 100%;
+        height: auto;
+    }
+    .contenido{
+      margin-top: 5vh;
+      grid-template-columns: repeat(2, 40%);
+      grid-template-rows: repeat(3, 30%);
+
+      margin: 0;
+      padding: 0;
+      width: 100vw;
+      height: 84vh;
+    }
+    #cardtitle p{
+      font-size: 1rem;   
+    }
+
+  }

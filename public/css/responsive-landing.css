@@ -1,0 +1,27 @@
+@media only screen and (max-width: 425px) {
+    .body1{
+        grid-template-rows: 20% 80%;
+        margin-top: 7vh;
+    }
+    nav{
+        height: 7vh;
+        padding-inline: 1rem;
+        width: calc(100vw - 2rem);
+    }
+    .nav-izq{
+        gap: 1rem;
+    }
+    #contint2{
+        padding-right: 1rem;
+    }
+    #cont2{
+        display: grid;
+        gap: 2rem;
+        grid-template-columns: repeat(2, auto);
+        margin-inline: 2rem;
+    }
+    #cardint1{
+        background: url('/img/fecha.webp');
+    }
+    
+}

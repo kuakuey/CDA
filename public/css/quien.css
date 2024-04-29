@@ -1,0 +1,183 @@
+.body1{
+    display: block;
+    height: auto;
+}
+.cont-info{
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    height: 100%;
+    margin-inline: 3rem;
+    margin-top: 3rem;
+}
+.cont-img{
+    position: relative;
+    align-items: center;
+    display: flex;
+    overflow: hidden; /* Para recortar cualquier parte de la imagen que se extienda más allá del contenedor */
+    width: 30vw;
+    height: auto;
+    background: url('https://z-p3-scontent.fgye10-2.fna.fbcdn.net/v/t39.30808-6/275522733_4980799945314370_6397729789175141411_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeFFWYboaetxBSJdtwmL3p3S_H1Ank6rj5n8fUCeTquPmfavKY1w9dEVxuMd9oChIsBsC-gS4NhGrVwBUNKTOJor&_nc_ohc=chn2wbCYpC0Q7kNvgFDMh0d&_nc_zt=23&_nc_ht=z-p3-scontent.fgye10-2.fna&oh=00_AfD476qKdzYfrOV2aHlyr939vAqcSHZLLOdwBreaNd8Zhw&oe=6630ED8B');
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.info{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 100vw;
+    height: 100%;
+}
+#continfo1{
+    margin-top: 14vh;
+    height: 20rem;
+    position: relative;
+}
+#continfo2{
+    grid-template-columns: 80% calc(20% - 2rem);
+}
+#history{
+    height: 100%;
+    overflow: auto;
+}
+.info p{
+    font-size: 1.5rem;
+}
+.info h3{
+margin: 0;
+padding: 0;
+}
+
+
+
+#imagen {
+    height: auto; /* Para que la imagen ocupe todo el ancho del contenedor */
+    width: 100%;
+    height: 100%;
+    display: block; /* Eliminar cualquier espacio adicional alrededor de la imagen */
+    position: absolute;
+    top: 0; /* Alinear la imagen con la parte superior del contenedor */
+    left: 0; /*Alinear la imagen con la parte izquierda del contenedor */
+    transition: transform 0.3s ease; /* Agregar una transición suave cuando la imagen cambie de tamaño */
+}
+.vision{
+    width: 100vw;
+    height: 20vh;
+}
+
+
+#contvision{
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    height: 100%;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+#contvision h1{
+    height: 4rem;
+    text-align: center;
+    align-content: center;
+}
+#titlevision{
+    border-radius: 10px;
+    background: white;
+    box-shadow:  7px 7px 22px #bebebe,
+                 -7px -7px 22px #ffffff;
+    margin-bottom: 2rem;
+}
+
+
+#presentacion-vision{
+    display: flex;
+    flex-direction: row;
+    height: 60vh;
+    gap: 1rem;
+}
+#presentacion-img{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    align-content: center;
+    position: relative;
+}
+#anio{
+    display: grid;
+    gap: 6px;
+    width: 10rem;
+}
+
+.img-vision{
+    height: 100%;
+    /* width: 100%; */
+    background-repeat: no-repeat !important;
+    background-size: contain !important;
+    background-position: center !important;
+    position: relative;
+
+}
+
+.botonimg{
+    background: rgb(255, 68, 0);
+    color: white;
+    border: none;
+    transition: 0.2s;
+    font-weight: bold;
+    font-size: 1rem;
+
+    &:active{
+        transform: scale(0.9);
+    }
+}
+#fuegovision{
+    background: black;
+    width: 100%;
+    height: calc(100% - 2rem);
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.tittlevision{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+#titulo-card{
+    position: absolute;
+    text-align: center;
+    align-content: center;
+
+    font-weight: bold;
+    
+    font-size: clamp(2rem, 5rem, 6rem);
+
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    user-select: none;
+    color: white;
+    -webkit-text-stroke: 2px rgba(0, 0, 0, 0.466); /* Para navegadores WebKit (Safari, Chrome) */
+    text-shadow: 16px 16px 16px #000000; /* Borde blanco de 2px */
+
+}
+
+#titulo-card:hover {
+    font-size: 5rem;
+    animation: enlargeAnimation 0.5s ease 0.5s forwards, shrinkAnimation 0.5s ease 2s forwards;
+}
+
+@keyframes enlargeAnimation  {
+    to {
+        font-size: 5.75rem;
+    }
+}
+
+@keyframes shrinkAnimation {
+    to {
+        font-size: 5rem;
+    }
+}

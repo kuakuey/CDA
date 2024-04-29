@@ -1,0 +1,39 @@
+
+@media only screen and (max-width: 768px) {
+    #presentacion-vision{
+        flex-direction: column;
+    }
+    #anio{
+        display: flex;
+        flex-direction: row;
+        width: calc(100vw - 6rem);
+        justify-content: center;
+        height: 4rem;
+    }
+    #presentacion-img{
+        height: 100%;
+    }
+    .botonimg{
+        padding-inline: 2%;
+    }
+    .cont-info{
+        flex-direction: column;
+        width: calc(100% - 6rem);
+        margin-inline: 3rem;
+    }
+    .info{
+        width: calc(100vw - 6rem);
+    }
+    .cont-img{
+        position: absolute;
+        top: -3rem;
+        right: -1rem;
+        width: 7rem;
+        height: 7rem;
+        border-radius: 50%;
+    }
+    #continfo1{
+        margin-top: 10rem;
+    }
+}
+
