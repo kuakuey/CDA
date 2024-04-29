@@ -103,6 +103,7 @@ body{
   user-select: none;
   transition: 0.1s ease-in;
   border: none !important;
+  cursor: pointer;
 
   &:hover{
     background: #dfdfdf;

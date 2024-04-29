@@ -55,10 +55,11 @@
 
 #cerrar{
     border: none;
-    width: 80%;
+    width: auto;
     height: 100%;
     background: #e96331;
     user-select: none;
+    cursor: pointer;
     &:hover{
       transform: scale(1.05);
     }
