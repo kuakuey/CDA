@@ -18,7 +18,7 @@
                 </div>
                 <div id="history">
                     <p>En un pequeño pueblo rodeado de colinas verdes y campos dorados, vivía un pastor llamado Miguel. Desde temprana edad, Miguel había sentido una profunda conexión con la naturaleza y con el rebaño de ovejas que cuidaba con amor y dedicación. Cada día, al salir el sol, lo encontraba recorriendo los prados, con su bastón en mano y una sonrisa serena en el rostro.</p>
-                    <p>Sin embargo, una tragedia sacudió la vida apacible de Miguel. Una feroz tormenta azotó la región, provocando una inundación que arrasó con gran parte de su rebaño y destruyó su modesta cabaña. Desolado y sin nada más que escombros a su alrededor, Miguel enfrentó la adversidad con valentía y determinación. Con la ayuda de vecinos y amigos, reconstruyó su hogar y, con el tiempo, volvió a cuidar de su rebaño con renovado fervor, convirtiéndose en un símbolo de resiliencia y esperanza para su comunidad.</p>
+                    {{-- <p>Sin embargo, una tragedia sacudió la vida apacible de Miguel. Una feroz tormenta azotó la región, provocando una inundación que arrasó con gran parte de su rebaño y destruyó su modesta cabaña. Desolado y sin nada más que escombros a su alrededor, Miguel enfrentó la adversidad con valentía y determinación. Con la ayuda de vecinos y amigos, reconstruyó su hogar y, con el tiempo, volvió a cuidar de su rebaño con renovado fervor, convirtiéndose en un símbolo de resiliencia y esperanza para su comunidad.</p> --}}
                 </div>
             </div>
         </div>
