@@ -11,6 +11,7 @@
 
 @section('content')
     <div id="contenido">
+        <div id="cont-table">
             <table>
                 <thead>
                     <tr>
@@ -34,6 +35,9 @@
                     <!-- Puedes agregar más filas según sea necesario -->
                 </tbody>
             </table>
-        <div>d</div>
+        </div>
+        <div>
+
+        </div>
     </div>
 @endsection
