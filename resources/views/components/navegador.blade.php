@@ -1,7 +1,7 @@
 <div id="navegador">
     <div id="h-nav">
         <div class="logo-cda"><img src="" alt="Logo"></div>
-        <div class="cont-nav"><a href="">DashBoard</a></div>
+        <div class="cont-nav"><a href="{{route('iniciar')}}">DashBoard</a></div>
         <div class="cont-nav"><a href="">Bandeja de Entrada</a></div>
         <div class="cont-nav"><a href="">integrantes</a></div>
         <div class="cont-nav"><a href="">Asistencia</a></div>

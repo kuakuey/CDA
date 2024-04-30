@@ -19,11 +19,10 @@ document.getElementById("cerrar").addEventListener("click",
 
 document.getElementById("eventos").addEventListener("click",
     function() {
-        Swal.fire({
-            title: "Good job!",
-            text: "You clicked the button!",
-            icon: "success"
-          });     
+
+        window.location.href = 'eventos';
+
+
 })
 document.getElementById("escuelas").addEventListener("click",
     function() {

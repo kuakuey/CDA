@@ -18,7 +18,14 @@
 
 </head>
 <body>
-    @yield('content')
+    <x-navegador></x-navegador>
+    <div id="cont-principal">
+        <div class="cabecera">
+            <h1>@yield('title-page')</h1>
+        </div>
+
+        @yield('content')
+    </div>
     @yield('script')     
     
 </body>

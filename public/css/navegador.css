@@ -9,7 +9,7 @@
     top: 0;
     left: 0;
     height: 100%;
-    width: 10rem;
+    width: 12vw;
     background: #e96331;
 
     display: flex;
@@ -25,6 +25,9 @@
     gap: 0.5rem;
     align-items: center;
     text-align: left;
+}
+#h-nav a{
+    color: white;
 }
 
 .cont-nav{
