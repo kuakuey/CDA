@@ -1,0 +1,15 @@
+*{
+    
+}
+
+#contenido{
+    padding: 1rem;
+    height: calc(100% - 6rem);
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 1rem;
+}
+
+#contenido table{
+    border: 1px solid gray;
+}
