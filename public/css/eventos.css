@@ -11,13 +11,26 @@
 }
 #cont-table{
     overflow: auto;
+    border: 1px solid gray;
 }
 
 #contenido table{
-    border: 1px solid gray;
     width: 100%;
-}
 
+}
+#tablaevento{
+  position: relative;
+
+}
+#contenido table thead{
+    background: gray;
+    user-select: none;
+    font-weight: bold; /* Texto en negrita */
+    color: #ffffff; /* Color de texto */
+    position: sticky; /* Fijar la posición */
+    top: 2px; /* Distancia desde el borde superior */
+    z-index: 1; 
+}
 
 /* Formulario */
 .form {
@@ -65,3 +78,21 @@
     background-color: #2BCC57;
   }
   
+  .butoneventos{
+    background-color: #e96331;
+    color: white;
+    border-radius: 20px;
+    box-sizing: border-box;
+    padding: 20px;
+    width: calc(100% - 1rem);
+    margin-top: 1rem;
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+  }
+
+  .action{
+    text-align: center;
+    width: 10rem;
+  }

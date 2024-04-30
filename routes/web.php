@@ -19,3 +19,13 @@ Route::get('/dashboard', [loginController::class, 'iniciar'])->name('iniciar');
 Route::post('/login-post', [loginController::class, 'store'])->name("storelogin");//enviar info en post
 
 Route::get('/eventos', [DashboardController::class, 'eventos'])->name('eventos');
+
+Route::post('/storeevento', [DashboardController::class, 'storeevent'])->name("storeevento");//enviar info en post
+
+Route::get('/eventosup/{id}', [DashboardController::class, 'activeevent'])->name('activeevent');
+
+Route::get('/eventosdown/{id}', [DashboardController::class, 'desevent'])->name('desevent');
+
+Route::get('/delete/{id}', [DashboardController::class, 'eliminarev'])->name('eliminarev');
+
+
