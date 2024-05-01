@@ -13,7 +13,7 @@ class LoginController extends Controller
         return view('pages.login');
     }
     public function iniciar(){
-        return view('pages.dashboard');
+        return view('pages.sistema.dashboard');
     }
     public function store(Request $request){
         $user = $request->input('user');

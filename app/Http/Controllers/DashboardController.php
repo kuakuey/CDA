@@ -24,19 +24,19 @@ class DashboardController extends Controller
         $evento->dateevento=$request->input('date');
         $evento->horaevento=$request->input('hora'); 
         $evento->imagen=$nameimg; 
-        $evento->estado="0"; 
+        $evento->estado="1"; 
 
         $evento->save();
 
 
         // return redirect()->back()->with('success', 'Swal.fire("Gracias!");');
-        return redirect()->route('eventos')->with(['success' => 'Su sugerencia fue enviada con exito']);
+        return redirect()->route('dashboard-eventos')->with(['success' => 'Su sugerencia fue enviada con exito']);
     } 
 
     public function activeevent($id){
         $tbevento = tbeventos::find($id); // Encuentra el registro por su ID
         $tbevento->update([
-            'estado' => '1',
+            'estado' => '0',
         ]);
         return back();        
     }
@@ -44,7 +44,7 @@ class DashboardController extends Controller
     public function desevent($id){
         $tbevento = tbeventos::find($id); // Encuentra el registro por su ID
         $tbevento->update([
-            'estado' => '0',
+            'estado' => '1',
         ]);
         return back();        
     }

@@ -12,13 +12,15 @@ Route::get('/', HomeController::class)->name('home');
 
 Route::get('/quienes-somos', [HomeController::class, 'who'])->name('who');
 
+Route::get('/eventos', [HomeController::class, 'eventos'])->name('eventos');
+
 Route::get('/login', loginController::class)->name('login');
 
 Route::get('/dashboard', [loginController::class, 'iniciar'])->name('iniciar');
 
 Route::post('/login-post', [loginController::class, 'store'])->name("storelogin");//enviar info en post
 
-Route::get('/eventos', [DashboardController::class, 'eventos'])->name('eventos');
+Route::get('/dashboard/eventos', [DashboardController::class, 'eventos'])->name('dashboard-eventos');
 
 Route::post('/storeevento', [DashboardController::class, 'storeevent'])->name("storeevento");//enviar info en post
 

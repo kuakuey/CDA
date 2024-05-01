@@ -29,10 +29,10 @@
                         <td class="">{{$evento->nombreevento}}</td>
                         <td class="">{{$evento->dateevento}}</td>
                         <td class="">{{$evento->horaevento}}</td>
-                        <td class="rowimg"><img src="img/eventos/{{$evento->imagen}}" alt="" class="imagen-evento"></td>
+                        <td class="rowimg"><img src="{{asset('img/eventos/'.$evento->imagen)}}" alt="" class="imagen-evento"></td>
                         <td class="">{{$evento->updated_at}}</td>
 
-                        @if ($evento->estado == 0)
+                        @if ($evento->estado == 1)
                         <td class="action"><a href="{{route('activeevent',$evento->id)}}">
                             <svg xmlns="http://www.w3.org/2000/svg" width="3rem" height="3rem" viewBox="0 0 32 32"><path fill="black" d="M16 2C8.268 2 2 8.268 2 16s6.268 14 14 14s14-6.268 14-14S23.732 2 16 2m0 26C9.373 28 4 22.627 4 16S9.373 4 16 4s12 5.373 12 12s-5.373 12-12 12"/></svg>                        </a>
                         <a href="{{route('eliminarev',$evento->id)}}">

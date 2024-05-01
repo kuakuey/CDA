@@ -55,31 +55,12 @@
 
     </div>
 
-    <div class="clickcard" id="card1">
-        <div class="cardinterna" id="cardint1">
-            <x-cerrarbtn><x-slot name="id">b1</x-slot></x-cerrarbtn>
-        </div>
-    </div>
-    <div class="clickcard" id="card2">
-        <div class="cardinterna" id="cardint2">
-            <x-cerrarbtn><x-slot name="id">b2</x-slot></x-cerrarbtn>
-        </div>
-    </div>
-    <div class="clickcard" id="card3">
-        <div class="cardinterna" id="cardint3">
-            <x-cerrarbtn><x-slot name="id">b3</x-slot></x-cerrarbtn>
-        </div>
-    </div>
-    <div class="clickcard" id="card4">
-        <div class="cardinterna" id="cardint4">
-            <x-cerrarbtn><x-slot name="id">b4</x-slot></x-cerrarbtn>
-        </div>
-    </div>
-    <div class="clickcard" id="card5">
-        <div class="cardinterna" id="cardint5">
-            <x-cerrarbtn><x-slot name="id">b5</x-slot></x-cerrarbtn>
-        </div>
-    </div>
+    <x-pop-up id="1" imagen="fvd_0.png" url=""></x-pop-up>
+    <x-pop-up id="2" imagen="fecha.webp" url="eventos"></x-pop-up>
+    <x-pop-up id="3" imagen="" url=""></x-pop-up>
+    <x-pop-up id="4" imagen="" url=""></x-pop-up>
+    <x-pop-up id="5" imagen="" url=""></x-pop-up>
+ 
 @endsection
 
 @section('script')
