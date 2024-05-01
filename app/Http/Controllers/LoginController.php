@@ -2,7 +2,10 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\tbusuarios;
 use Illuminate\Http\Request;
+
+
 
 class LoginController extends Controller
 {
@@ -13,9 +16,30 @@ class LoginController extends Controller
         return view('pages.dashboard');
     }
     public function store(Request $request){
-        $user1 = $request->input('user');
-        $password1 = $request->input('password');
+        $user = $request->input('user');
+        $password = $request->input('password');
 
-        return redirect()->route('iniciar')->with(['success' => 'Bienvenido '.$user1]);
+        $login = new tbusuarios;
+        $login = tbusuarios::where('user', $user)->first();
+
+        $nombreUsuario = $login->nombre;
+
+        if ($login) {
+            // Usuario encontrado, ahora puedes verificar la contraseña
+            if ($password === $login->password) {
+                return redirect()->route('iniciar')->with(['success' => 'Bienvenido '.$nombreUsuario])->header('Cache-Control', 'no-store, no-cache, must-revalidate, max-age=0');
+
+
+
+            } else {
+                return back()->withErrors(['msgerror' => 'Contraseña incorrecta']);
+            }
+        } else {
+            return back()->withErrors(['msgerror' => 'Usuario incorrecta']);
+        }
+        
+
+        
+
     }
 }

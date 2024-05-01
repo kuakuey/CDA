@@ -13,7 +13,8 @@
 
 </head>
 <body>
-    <form class="form" action="{{route("storelogin")}}" method="post">
+    <div id="bodyform">
+      <form class="form" action="{{route("storelogin")}}" method="post">
         {{-- Para que sera esto... --}}
         @csrf 
         <div>
@@ -40,5 +41,26 @@
           </button>
         </div>
     </form>
+
+    </div>
+
+    <div>
+      @if ($errors->any())
+        <script>
+            Swal.fire({
+                icon: "error",
+                title: "Error",
+                text: "{{ $errors->first() }}",
+                showConfirmButton: false,
+                timer: 1000
+            });
+        </script>
+      @endif
+    </div>
+
+
+
+
 </body>
+
 </html>
