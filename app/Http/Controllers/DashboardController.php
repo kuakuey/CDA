@@ -16,13 +16,17 @@ class DashboardController extends Controller
     } 
 
     public function storeevent(Request $request){
-        $queja = new tbeventos;
-        $queja->nombreevento=$request->input('nombre');
-        $queja->dateevento=$request->input('date');
-        $queja->horaevento=$request->input('hora'); 
-        $queja->estado="0"; 
+        $nameimg = 'ev-'.$request->input('nombre').'-'.time().'.'.$request->imagen->getClientOriginalExtension();
+        $request->imagen->move(public_path('img/eventos'), $nameimg);
 
-        $queja->save();
+        $evento = new tbeventos;
+        $evento->nombreevento=$request->input('nombre');
+        $evento->dateevento=$request->input('date');
+        $evento->horaevento=$request->input('hora'); 
+        $evento->imagen=$nameimg; 
+        $evento->estado="0"; 
+
+        $evento->save();
 
 
         // return redirect()->back()->with('success', 'Swal.fire("Gracias!");');

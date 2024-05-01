@@ -37,7 +37,7 @@
     background-color: #e96331;
     border-radius: 20px;
     box-sizing: border-box;
-    height: 40vh;
+    height: 100%;
     padding: 20px;
     width: calc(100% - 1rem);
 
@@ -95,4 +95,18 @@
   .action{
     text-align: center;
     width: 10rem;
+  }
+
+  .imagen-evento{
+    height: 5rem;
+
+  }
+
+  .tbRow{
+    height: 5rem;
+  }
+
+  .rowimg{
+    width: 5rem;
+    text-align: center;
   }
