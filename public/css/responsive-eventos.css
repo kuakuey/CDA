@@ -1,0 +1,11 @@
+@media only screen and (max-width: 430px) {
+    .body1{
+        grid-template-columns: repeat(2, 0fr);
+        grid-template-rows: repeat(2, 0fr);
+      }
+
+      .card {
+        height: 20vh;
+        width: 35vw;
+    }
+}

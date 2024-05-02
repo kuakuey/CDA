@@ -1,4 +1,4 @@
-@media only screen and (max-width: 425px) {
+@media only screen and (max-width: 430px) {
     .body1{
         grid-template-rows: 20% 80%;
         margin-top: 7vh;
@@ -20,8 +20,9 @@
         grid-template-columns: repeat(2, auto);
         margin-inline: 2rem;
     }
-    #cardint1{
-        background: url('/img/fecha.webp');
+
+    .cardinterna{
+        height: auto !important;
     }
     
 }

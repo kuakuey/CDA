@@ -2,7 +2,6 @@
     position: relative;
     width: 20vw;
     height: 30vh;
-    box-shadow: 0px 1px 13px rgba(0,0,0,0.1);
     cursor: pointer;
     transition: all 120ms;
     display: flex;
@@ -12,22 +11,10 @@
     padding: 0.5em;
     padding-bottom: 3.4em;
     text-align: center;
-  }
-  
-  .card::after {
-    content: "Proximamente";
-    padding-top: 1.25em;
-    position: absolute;
-    left: 0;
-    bottom: -60px;
-    background: #e96331;
-    color: #fff;
-    height: 2.5em;
-    width: 100%;
-    transition: all 80ms;
-    font-weight: 600;
-    text-transform: uppercase;
-    opacity: 0;
+
+    box-shadow:  8px 8px 26px #bebebe,
+    -8px -8px 26px #ffffff;
+
   }
   
   .card .title {
@@ -69,8 +56,11 @@
 
   .body1{
     grid-template-columns: repeat(4, 0fr);
-    height: 100%;
+    height: calc(90vh - 4rem);
     padding: 2rem;
     gap: 2rem;
     justify-content: center;
+    overflow: hidden;
+    overflow-y: auto;
+
   }

@@ -195,7 +195,7 @@
 
 .cardinterna{
     position: absolute;
-    width: calc(100vw - 10rem);
+    display: flex;
     height: calc(100vh - 10rem);
     top: 50%;
     left: 50%;
@@ -258,22 +258,9 @@
 
 
   position: absolute;
-  bottom: -1rem;
+  bottom: -2rem;
   left: 50%;
   transform: translate(-50%);
-}
-
-#cardint1{
-    background: url('/img/fvd_0.png');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-#cardint2{
-    background: url('/img/fecha.webp');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
 }
 
 footer{

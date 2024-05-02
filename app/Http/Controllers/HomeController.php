@@ -8,13 +8,19 @@ use Illuminate\Http\Request;
 class HomeController extends Controller
 {
     public function __invoke(){
-        return view('pages.landing.home');
+        $eventocercano = Tbeventos::where('estado', '1')
+        ->orderBy('dateevento', 'asc')
+        ->first();
+
+        return view('pages.landing.home', compact('eventocercano'));
     } 
     public function who(){
         return view('pages.landing.quienes-somos');
     } 
     public function eventos(){
-        $eventos = Tbeventos::where('estado','1')->get();
+        $eventos = Tbeventos::where('estado','1')
+        ->orderBy('dateevento', 'desc')
+        ->get();
         return view('pages.landing.eventos', compact('eventos'));
     } 
 }
