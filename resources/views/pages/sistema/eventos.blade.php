@@ -6,6 +6,10 @@
 
 @section('style')
 <link rel="stylesheet" href="{{ asset('css/eventos.css')}}">
+<link rel="stylesheet" href="{{ asset('css/responsive-nav-sis.css')}}">
+<link rel="stylesheet" href="{{ asset('css/responsive-sis-eventos.css')}}">
+
+
     
 @endsection
 

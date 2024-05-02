@@ -1,4 +1,12 @@
 @media only screen and (max-width: 430px) {
+      nav{
+        height: 7vh;
+        padding-inline: 1rem;
+        width: calc(100vw - 2rem);
+    }
+    .nav-izq {
+      gap: 1rem;
+    }
     .body1{
         grid-template-columns: repeat(2, 0fr);
         grid-template-rows: repeat(2, 0fr);
@@ -8,4 +16,5 @@
         height: 20vh;
         width: 35vw;
     }
+
 }

@@ -1,17 +1,24 @@
 
 @media only screen and (max-width: 768px) {
+    nav{
+        height: 7vh;
+        padding-inline: 1rem;
+        width: calc(100vw - 2rem);
+    }
+    .nav-izq {
+      gap: 1rem;
+    }
     #presentacion-vision{
         flex-direction: column;
     }
     #anio{
         display: flex;
         flex-direction: row;
-        width: calc(100vw - 6rem);
-        justify-content: center;
+        width:auto;
         height: 4rem;
     }
     #presentacion-img{
-        height: 100%;
+        height: 25vh;
     }
     .botonimg{
         padding-inline: 2%;
@@ -26,7 +33,7 @@
     }
     .cont-img{
         position: absolute;
-        top: -3rem;
+        top: -5rem;
         right: -1rem;
         width: 7rem;
         height: 7rem;
@@ -34,6 +41,9 @@
     }
     #continfo1{
         margin-top: 10rem;
+    }
+    #contvision {
+        margin: 1rem;
     }
 }
 

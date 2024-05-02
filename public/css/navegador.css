@@ -8,7 +8,7 @@
     position: absolute;
     top: 0;
     left: 0;
-    height: 100%;
+    height: calc(100vh - 2rem);
     width: 12vw;
     background: #e96331;
 
@@ -17,6 +17,8 @@
     align-items: left;
     justify-content: space-between;
     text-align: center;
+    padding-top: 1rem ;
+    padding-bottom: 1rem;
 }
 
 #h-nav{
@@ -53,7 +55,6 @@
     border: 1px solid white;
     width: 4rem;
     height: 4rem;
-    margin-top: 1rem;
 }
 
 #cerrar{

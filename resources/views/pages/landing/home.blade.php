@@ -26,31 +26,37 @@
             <x-slot name="idbtn">btn1</x-slot>
             <x-slot name="title">Horarios</x-slot>
             <x-slot name="icon">bi--clock-fill</x-slot>
+            <x-slot name="mostrarBoton">si</x-slot>
         </x-cardboton>
         <x-cardboton>
             <x-slot name="idbtn">btn2</x-slot>
             <x-slot name="title">Eventos</x-slot>
             <x-slot name="icon">ion--calendar-sharp</x-slot>
+            <x-slot name="mostrarBoton">si</x-slot>
         </x-cardboton>
         <x-cardboton>
             <x-slot name="idbtn">btn3</x-slot>
             <x-slot name="title">Title</x-slot>
             <x-slot name="icon">mdi--user</x-slot>
+            <x-slot name="mostrarBoton">si</x-slot>
         </x-cardboton>
         <x-cardboton>
             <x-slot name="idbtn">btn4</x-slot>
             <x-slot name="title">Title</x-slot>
             <x-slot name="icon">mdi--user</x-slot>
+            <x-slot name="mostrarBoton">si</x-slot>
         </x-cardboton>
         <x-cardboton>
             <x-slot name="idbtn">btn5</x-slot>
             <x-slot name="title">Title</x-slot>
             <x-slot name="icon">mdi--user</x-slot>
+            <x-slot name="mostrarBoton">si</x-slot>
         </x-cardboton>
         <x-cardboton>
             <x-slot name="idbtn">btn6</x-slot>
             <x-slot name="title">Nosotros</x-slot>
             <x-slot name="icon">fluent--people-team-28-filled</x-slot>
+            <x-slot name="mostrarBoton">si</x-slot>
         </x-cardboton>
 
     </div>

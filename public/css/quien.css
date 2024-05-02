@@ -17,7 +17,7 @@
     overflow: hidden; /* Para recortar cualquier parte de la imagen que se extienda más allá del contenedor */
     width: 30vw;
     height: auto;
-    background: url('https://z-p3-scontent.fgye10-2.fna.fbcdn.net/v/t39.30808-6/275522733_4980799945314370_6397729789175141411_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeFFWYboaetxBSJdtwmL3p3S_H1Ank6rj5n8fUCeTquPmfavKY1w9dEVxuMd9oChIsBsC-gS4NhGrVwBUNKTOJor&_nc_ohc=chn2wbCYpC0Q7kNvgFDMh0d&_nc_zt=23&_nc_ht=z-p3-scontent.fgye10-2.fna&oh=00_AfD476qKdzYfrOV2aHlyr939vAqcSHZLLOdwBreaNd8Zhw&oe=6630ED8B');
+    background: url('../img/ap.jpg');
     background-position: top;
     background-repeat: no-repeat;
     background-size: cover;
@@ -74,6 +74,7 @@ padding: 0;
     height: 100%;
     margin-top: 2rem;
     margin-bottom: 2rem;
+    width: auto;
 }
 
 #contvision h1{
@@ -86,14 +87,13 @@ padding: 0;
     background: white;
     box-shadow:  7px 7px 22px #bebebe,
                  -7px -7px 22px #ffffff;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
 }
 
 
 #presentacion-vision{
     display: flex;
     flex-direction: row;
-    height: 60vh;
     gap: 1rem;
 }
 #presentacion-img{
@@ -107,6 +107,7 @@ padding: 0;
     display: grid;
     gap: 6px;
     width: 10rem;
+    justify-content: center;
 }
 
 .img-vision{
@@ -116,6 +117,7 @@ padding: 0;
     background-size: contain !important;
     background-position: center !important;
     position: relative;
+    display: flex;
 
 }
 
@@ -135,8 +137,7 @@ padding: 0;
     background: black;
     width: 100%;
     height: calc(100% - 2rem);
-    margin-top: 1rem;
-    margin-bottom: 1rem;
+
 }
 
 .tittlevision{

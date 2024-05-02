@@ -16,11 +16,9 @@
 
 #contenido table{
     width: 100%;
-
 }
 #tablaevento{
   position: relative;
-
 }
 #contenido table thead{
     background: gray;
@@ -31,7 +29,10 @@
     top: 2px; /* Distancia desde el borde superior */
     z-index: 1; 
 }
-
+#contenido table tbody{
+overflow-y: auto;
+height: 80vh;
+}
 /* Formulario */
 .form {
     background-color: #e96331;

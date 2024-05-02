@@ -3,7 +3,8 @@
 @section('title','Casa de Avivamiento')
 
 @section('style')
-    
+    <link rel="stylesheet" href="{{ asset('css/responsive-nav-sis.css')}}">
+    <link rel="stylesheet" href="{{ asset('css/responsive-sistema.css')}}">
 @endsection
 
 @section('title-page', 'Bienvenido')

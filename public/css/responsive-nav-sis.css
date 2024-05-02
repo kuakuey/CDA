@@ -1,0 +1,22 @@
+
+@media screen and (max-width: 460px) {
+    #navegador {
+        width: calc(100% - 2rem);
+        height: auto;
+        flex-direction: row;
+        padding-inline: 1rem;
+        padding-top: 0.5rem ;
+        padding-bottom: 0.5rem;
+    }
+    #cont-principal{
+        margin-top: 10vh;
+        width: 100%;
+        height: auto;
+    }
+    .cont-nav{
+        display: none;
+    }
+    #contenido table {
+        width: 160%;
+    }
+  }

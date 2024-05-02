@@ -1,0 +1,12 @@
+
+@media screen and (max-width: 460px) {
+    .form{
+        display: none;
+    }
+    #contenido {
+        grid-template-columns: 100%;
+    }
+    #cont-table{
+        height: 75vh;
+    }
+  }

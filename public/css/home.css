@@ -113,39 +113,3 @@
 
 
 
-@media screen and (max-width: 768px) {
-    .ContCard {
-      grid-template-columns: repeat(2, 47%);
-    }
-    #cardtitle p{
-      font-size: 1.5rem;   
-    }
-  }
-
-@media screen and (max-width: 425px) {
-    #navegador {
-        width: 100%;
-        height: 8vh;
-        flex-direction: row;
-
-    }
-    #cont-principal{
-      margin-top: 8vh;
-        width: 100%;
-        height: auto;
-    }
-    .contenido{
-      margin-top: 5vh;
-      grid-template-columns: repeat(2, 40%);
-      grid-template-rows: repeat(3, 30%);
-
-      margin: 0;
-      padding: 0;
-      width: 100vw;
-      height: 84vh;
-    }
-    #cardtitle p{
-      font-size: 1rem;   
-    }
-
-  }
