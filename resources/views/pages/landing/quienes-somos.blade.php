@@ -22,6 +22,14 @@
                 </div>
             </div>
         </div>
+
+        <div class="cont-info" id="continfo2">
+            <img src="{{ asset('img/ap.jpg') }}" alt="">
+            <div id="encabezado">
+                <h1>Un lugar ideal para ti y tu familia!</h1>
+            </div>
+        </div>
+
         <div class="cont-info" id="contvision">
             <div id="titlevision"><h1>VISION</h1></div>
             <div id="presentacion-vision">

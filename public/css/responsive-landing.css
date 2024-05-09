@@ -25,5 +25,8 @@
         height: auto !important;
         width: 90vw;
     }
+    #cont2 button{
+        border-radius: 10px;
+    }
     
 }

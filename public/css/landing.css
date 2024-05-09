@@ -209,7 +209,7 @@
     width: 4em;
     height: 4em;
     border: none;
-    background: rgba(180, 83, 107, 0.11);
+    background: rgba(255, 0, 0, 0.39);
     border-radius: 50%;
     transition: background 0.5s;
     cursor: pointer;

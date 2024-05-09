@@ -2,8 +2,9 @@
     <div class="cardinterna" id="cardint{{$id}}" style="">
         <img src="img/{{$imagen}}" alt="">
         <x-cerrarbtn><x-slot name="id">b{{$id}}</x-slot></x-cerrarbtn>
+
+        {{$boton}}
         
-        <a href="{{$url}}" id="btnmore">Ver mas</a>
     </div>
 </div>
 

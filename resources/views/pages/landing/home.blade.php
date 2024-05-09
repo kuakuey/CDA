@@ -61,13 +61,25 @@
 
     </div>
 
-    <x-pop-up id="1" imagen="fvd_0.png" url=""></x-pop-up>
-    <x-pop-up id="2" imagen="eventos/{{$eventocercano->imagen}}" url="eventos"></x-pop-up>
+    <x-pop-up id="1" imagen="fvd_0.png" url="" >
+        <x-slot name="boton"></x-slot>
+    </x-pop-up>
 
-    <x-pop-up id="3" imagen="" url=""></x-pop-up>        
+    <x-pop-up id="2" imagen="eventos/{{$eventocercano->imagen}}" url="eventos">
+        <x-slot name="boton"><a href="eventos" id="btnmore">Ver mas</a></x-slot>
+    </x-pop-up>
 
-    <x-pop-up id="4" imagen="" url=""></x-pop-up>
-    <x-pop-up id="5" imagen="" url=""></x-pop-up>
+    <x-pop-up id="3" imagen="" url="">
+        <x-slot name="boton"></x-slot>
+    </x-pop-up>        
+
+    <x-pop-up id="4" imagen="" url="">
+        <x-slot name="boton"></x-slot>
+    </x-pop-up>
+
+    <x-pop-up id="5" imagen="" url="">
+        <x-slot name="boton"></x-slot>
+    </x-pop-up>
  
 @endsection
 

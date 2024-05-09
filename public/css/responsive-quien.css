@@ -10,12 +10,15 @@
     }
     #presentacion-vision{
         flex-direction: column;
+        height: auto;
+
     }
     #anio{
         display: flex;
         flex-direction: row;
         width:auto;
         height: 4rem;
+        justify-content: center;
     }
     #presentacion-img{
         height: 25vh;

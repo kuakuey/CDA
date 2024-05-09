@@ -33,10 +33,39 @@
     margin-top: 14vh;
     height: 20rem;
     position: relative;
+    display: none;
 }
 #continfo2{
-    grid-template-columns: 80% calc(20% - 2rem);
+    position: relative;
+    margin-top: 12vh;
+    overflow: hidden;
+    height: 85vh;
 }
+#continfo2 img{
+    width: 100%;
+    object-fit: cover;
+    z-index: 1;
+}
+#encabezado{
+    position: absolute;
+    bottom: 0;
+    z-index: 2;
+    width: 100%;
+    height: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #68666579;
+
+}
+#encabezado h1{
+    color: white;
+    font-weight: 700;
+    font-size: 3rem;
+}
+
+
+
 #history{
     height: 100%;
     overflow: auto;
@@ -95,10 +124,11 @@ padding: 0;
     display: flex;
     flex-direction: row;
     gap: 1rem;
+    height: 75vh;
 }
 #presentacion-img{
     width: 100%;
-    height: 100%;
+    height: auto;
     text-align: center;
     align-content: center;
     position: relative;
@@ -107,7 +137,6 @@ padding: 0;
     display: grid;
     gap: 6px;
     width: 10rem;
-    justify-content: center;
 }
 
 .img-vision{
