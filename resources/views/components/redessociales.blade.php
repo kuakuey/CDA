@@ -13,7 +13,7 @@
 
 
     <?php
-    $numeroTelefono = "+593995737927"; 
+    $numeroTelefono = "+59399573792"; 
     $mensajeEnviar = "Hola Casa de Avivamiento!";
 
     $enlaceWhatsApp = "https://wa.me/$numeroTelefono?text=$mensajeEnviar";
